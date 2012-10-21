@@ -1,0 +1,26 @@
+!!!5
+html
+  head
+    title #{title} | The Programming Club of CHE
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    header
+      h1 The Programming Club of Cherry Hill East
+    .container
+      .tabs
+        ul#tabUL
+          li#home 
+            a(href="/") Home
+          |
+          li#tut 
+            a(href="/tutorials") Tutorials
+          |
+          li#proj 
+            a(href="/projects") 2012-2013 Project
+      
+      .main-content
+        block content
+      .sidebar
+        block sidebar
+    footer
+      p Running on node with Express, Jade and Stylus
